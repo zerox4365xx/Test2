@@ -1,3 +1,4 @@
+# Script Textos Zero
 local config = {
     positions = {
         ["Empire War"] = {x = 32097, y = 32218, z = 7}
@@ -10,6 +11,5 @@ function onThink(cid, interval, lastExecution)
 	      doSendMagicEffect(pos, efecto)
 	      doSendMagicEffect(pos, efecto)
     end
-    
     return TRUE
 end  
