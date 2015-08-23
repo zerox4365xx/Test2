@@ -1,1 +1,15 @@
-# Test2
+local config = {
+    positions = {
+        ["Empire War"] = {x = 32097, y = 32218, z = 7}
+    }
+}
+
+function onThink(cid, interval, lastExecution)
+    for text, pos in pairs(config.positions) do
+        doSendAnimatedText(pos, text, 35)
+	      doSendMagicEffect(pos, efecto)
+	      doSendMagicEffect(pos, efecto)
+    end
+    
+    return TRUE
+end  
